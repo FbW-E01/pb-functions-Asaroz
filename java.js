@@ -8,7 +8,7 @@
 // sumIntFrom1ToN(4) ➞ 10
 // sumIntFrom1ToN(13) ➞ 91
 // sumIntFrom1ToN(600) ➞ 180300
-
+console.log("-------")
 const sum_of_integer = (a) => {
     let sum = 0
     for (let i = 0; i < a; i++) {
@@ -26,7 +26,7 @@ console.log(sum_of_integer(600))
 // sumOfCubes(1, 5, 9) ➞ 855 // Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
 // sumOfCubes(2) ➞ 8
 // sumOfCubes() ➞ 0
-
+console.log("-------")
 function sum_of_cubes(a, b, c) {
     if (a == null) {
         a = 0
@@ -51,7 +51,7 @@ console.log(sum_of_cubes())
 // isStrStartOfWord("bu", "button") ➞ true
 // isStrStartOfWord("tri", "triplet") ➞ true
 // isStrStartOfWord("beau", "pastry") ➞ false
-
+console.log("-------")
 function isStrStartOfWord(string_start, string_full) {
     let str = String(string_full)
     if (str.indexOf(string_start) == 0) {
@@ -92,7 +92,7 @@ console.log(less_or_equal0(-2))
 // Example:
 
 // countOccurrences("this is a string", "i") ➞ 3
-
+console.log("-------")
 function count_letters(fullstring, letter) {
     let number_of_letters = fullstring.match(new RegExp(letter, "ig"))
     if (number_of_letters == null) {
@@ -111,7 +111,7 @@ console.log(count_letters("this is a string", "i"))
 // calcBaseToExponent(5, 5) ➞ 3125
 // calcBaseToExponent(10, 10) ➞ 10000000000
 // calcBaseToExponent(3, 3) ➞ 27
-
+console.log("-------")
 function calc_exponent(a, b) {
     return a ** b
 }
@@ -121,7 +121,7 @@ console.log(calc_exponent(5, 5))
 // Example:
 
 // dogAge(4) ➞ "Your doggo is 28 years old in dog years!"
-
+console.log("-------")
 function dogyears(a) {
     return a * 7
 }
@@ -146,7 +146,7 @@ console.log("Your dog is ", dogyears(4), "yars old in human years")
 
 // calcLifetimeSupply(32, 0.58, 65) ➞ "The snack company should provide you with 14,406 units, until you are a ripe old age of 65. Happy snacking!"
 
-
+console.log("-------")
 function lifetime_supply(age, per_day, max_age) {
     let totalyears = max_age - age
     if (totalyears <= 0) {
@@ -166,6 +166,8 @@ console.log(lifetime_supply(32, 0.58, 65))
 // isWaldoHere("Wait, don't you mean Wally?") ➞ false
 // isWaldoHere("waldo is here") ➞ true
 
+
+console.log("-------")
 
 
 function where_is_waldo(waldo) {
@@ -193,6 +195,7 @@ console.log(where_is_waldo("I found you Waldo Waldo!"), "have been found here")
 // isEqualSlices(8, 3, 3) ➞ false
 
 // isEqualSlices(24, 12, 2) ➞ true
+console.log("-------")
 
 function split_the_pie(slices, recipients, spp) {
     let given_slices = recipients * spp
